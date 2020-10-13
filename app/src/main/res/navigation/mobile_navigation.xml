@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navitest.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_description"
+        android:name="com.example.navitest.ui.description.DescriptionFragment"
+        android:label="@string/menu_description"
+        tools:layout="@layout/fragment_description" />
+
+    <fragment
+        android:id="@+id/nav_top5"
+        android:name="com.example.navitest.ui.top5.Top5Fragment"
+        android:label="@string/menu_top5"
+        tools:layout="@layout/fragment_top5" />
+
+    <fragment
+        android:id="@+id/nav_date"
+        android:name="com.example.navitest.ui.date.DateFragment"
+        android:label="@string/menu_date"
+        tools:layout="@layout/fragment_date" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.navitest.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
